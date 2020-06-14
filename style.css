@@ -5,12 +5,13 @@
 }
 
 body {
+    overflow-x: hidden;
     background-image: url(images/background_pic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 175%;
     background-position-y: -200px;
-    background-position-x: -600px;
+    background-position-x: -600px; 
 
 }
 
@@ -20,13 +21,13 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    min-height: 12vh;
     font-family: 'Poppins', sans-serif;
 }
 
 .nav_links {
     display: flex;
     justify-content: space-around;
-    height: 10%;
     width: 40%;
 }
 
@@ -48,7 +49,6 @@ nav {
 
 .nav_links a:hover {
     color: turquoise;
-    transition: 0.3s ease-in-out;
 }
 
 
@@ -97,8 +97,8 @@ nav {
 }
 
 .paragraph {
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .paragraph p {
@@ -131,7 +131,7 @@ nav {
         overflow-x: hidden; 
         background-position: 0px 0px;
         background-position-x: -250px;
-        }
+    }
 
     .logo img {
         height: 60px;
@@ -143,10 +143,10 @@ nav {
     }
 
     .nav_links {
-        position: absolute;
+        position: fixed;
         right: 0px;
         height: 30%;
-        top: 12%;
+        top: 12vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -176,9 +176,7 @@ nav {
 
 @media screen and (max-width:400px) {
     body {
-        background-size: 200%;
-        background-position: 0px 0px;
-        background-position-x: -200px;
+        overflow-x: hidden;
     }
     
     .textBox {
@@ -188,6 +186,7 @@ nav {
 
     .nav_links {
         height: 20%;
+
     }
 
 }
