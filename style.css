@@ -4,15 +4,10 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
-    background-image: url(images/background_pic.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 175%;
-    background-position-y: -200px;
-    background-position-x: -600px; 
 
+.wraper {
+    overflow-x: hidden;
+    position: relative;
 }
 
 
@@ -31,9 +26,6 @@ nav {
     width: 40%;
 }
 
-.logo {
-    padding: 2%;
-}
 
 .nav_links li {
     list-style: none;
@@ -45,6 +37,7 @@ nav {
   letter-spacing: 2px;
   font-weight: bold;
   font-size: 15px;
+
 }
 
 .nav_links a:hover {
@@ -68,8 +61,8 @@ nav {
 
 .textBox {
     width: 100%;
-    margin-top: 10%;
-    margin-bottom: 25%;
+    padding-top: 20%;
+    padding-bottom: 30%;
     padding-left: 10%;
 }
 
@@ -79,6 +72,17 @@ nav {
     font-family: 'Roboto', sans-serif;
 }
 
+/********* landing page ************/
+
+.landingPage {
+    background-image: url(images/background_pic.jpg);
+    background-size: cover;
+    background-size: 175%;
+    background-repeat: no-repeat;
+    background-position-x: 40%;
+    margin: 0;
+    padding-top: 20px;
+}
 
 /************* About Me***************/
 
@@ -127,30 +131,21 @@ nav {
 
 @media screen and (max-width:768px) {
     
-    body {
-        overflow-x: hidden; 
-        background-position: 0px 0px;
-        background-position-x: -250px;
-    }
 
     .logo img {
         height: 60px;
         width: 60px;
-    }
+    }   
     
-    nav {
-        margin-top: 20px;
-    }
-
     .nav_links {
-        position: fixed;
+        position: absolute;
         right: 0px;
-        height: 30%;
+        height: 20%;
         top: 12vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 45%;
+        width: 48%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
@@ -165,7 +160,7 @@ nav {
     }
 
     .textBox {
-        margin-top: 25%;
+        padding-top: 20%;
     }
 
     .textBox h1 {
@@ -175,18 +170,18 @@ nav {
 }
 
 @media screen and (max-width:400px) {
-    body {
-        overflow-x: hidden;
-    }
+
     
     .textBox {
-        margin-top:7%;
-        margin-bottom: 30%;
+        padding-top: 0%;
+    }
+
+    .textBox h1 {
+        font-size: 25px;
     }
 
     .nav_links {
-        height: 20%;
-
+        height: 10%;
     }
 
 }
