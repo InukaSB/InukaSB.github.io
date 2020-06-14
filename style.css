@@ -10,6 +10,10 @@
     position: relative;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /******** Nav bar ********/
 nav {
@@ -18,6 +22,7 @@ nav {
     align-items: center;
     min-height: 12vh;
     font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
 }
 
 .nav_links {
@@ -25,7 +30,6 @@ nav {
     justify-content: space-around;
     width: 40%;
 }
-
 
 .nav_links li {
     list-style: none;
@@ -35,8 +39,8 @@ nav {
   color: rgb(238, 238, 238);;
   text-decoration: none;
   letter-spacing: 2px;
-  font-weight: bold;
-  font-size: 15px;
+  font-weight: 1000;
+  font-size: 20px;
 
 }
 
@@ -57,21 +61,6 @@ nav {
     transition: all 0.3s ease;
 } 
 
-/********** Heading *************/
-
-.textBox {
-    width: 100%;
-    padding-top: 20%;
-    padding-bottom: 30%;
-    padding-left: 10%;
-}
-
-.textBox h1 {
-    font-size: 75px;
-    color:rgb(255, 255, 255);
-    font-family: 'Roboto', sans-serif;
-}
-
 /********* landing page ************/
 
 .landingPage {
@@ -80,8 +69,9 @@ nav {
     background-size: 175%;
     background-repeat: no-repeat;
     background-position-x: 40%;
+    background-position-y: 40%;
     margin: 0;
-    padding-top: 20px;
+    height: 800px;
 }
 
 /************* About Me***************/
@@ -89,6 +79,7 @@ nav {
 .aboutMe {
     width: 100%;
     background-color: rgb(255, 255, 255);
+    height: 800px;
 }
 
 .aboutMe h1 {
@@ -96,13 +87,14 @@ nav {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: rgb(0, 184, 187);
-    padding-top: 75px;
-    padding-bottom: 50px;
+    padding-top: 18%;
 }
 
 .paragraph {
+    padding: 60px;
     padding-left: 20%;
     padding-right: 20%;
+    
 }
 
 .paragraph p {
@@ -116,22 +108,93 @@ nav {
 
 .myWork {
     width: 100%;
-    background-color: white;
+    height: auto;
+    background-color: rgb(66, 66, 66);
 }
 
 .myWork h1 {
     font-size: 40px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    color: rgb(233, 233, 233);
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+.workImg {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.workImg p {
+    text-align: center;
+}
+
+.workImg img {
+    max-width: 400px;
+    margin: 30px;
+}
+
+.drawing2 {
+    height: 400px;
+    width: auto;
+}
+
+/********** Contact ***********/
+
+.contact {
+    height: 400px;
+
+}
+
+.contact h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
     color: rgb(0, 184, 187);
     padding-top: 75px;
+    padding-bottom: 50px;
 }
+
+ion-icon {
+    font-size: 50px;
+    color: black;
+}
+
+ion-icon:hover {
+    color:rgb(0, 184, 187) ;
+}
+
+.contact p {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+
+
 
 /* Mobile Responsive */
 
 @media screen and (max-width:768px) {
     
-
+    .landingPage {
+        height: 400px;
+        background-size: cover;
+    }
+    
     .logo img {
         height: 60px;
         width: 60px;
@@ -140,7 +203,7 @@ nav {
     .nav_links {
         position: absolute;
         right: 0px;
-        height: 20%;
+        height: 5%;
         top: 12vh;
         display: flex;
         flex-direction: column;
@@ -159,12 +222,16 @@ nav {
         cursor: pointer;
     }
 
-    .textBox {
-        padding-top: 20%;
+    .workImg img {
+        max-width: 380px;
     }
 
-    .textBox h1 {
-        font-size: 30px;
+    .drawing2 {
+        height: auto;
+    }
+
+    .buttons {
+        width: 30%;
     }
 
 }
@@ -172,13 +239,6 @@ nav {
 @media screen and (max-width:400px) {
 
     
-    .textBox {
-        padding-top: 0%;
-    }
-
-    .textBox h1 {
-        font-size: 25px;
-    }
 
     .nav_links {
         height: 10%;
