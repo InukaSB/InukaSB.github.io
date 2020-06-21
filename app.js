@@ -25,12 +25,16 @@ const navSlide = () => {
 
 }
 
-var preloader = document.getElementById('loading-screen');
+//  var preloader = document.getElementsByClassName('.loader_bg');
 
-function loading(){
-    preloader.style.display = 'none';
-}
+// function loading(){
+//         preloader.style.display = 'none';
+//  }
+    
+// loading();
 
-loading();
+setTimeout(function(){
+    $('.loader_bg').fadeToggle();
+}, 1000);
 
 navSlide();

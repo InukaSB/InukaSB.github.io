@@ -19,11 +19,11 @@ html {
 
 /* I got this from code pen */
 
-#loading-screen {
-    background: #1b1b1b;
+.loader_bg {
+    background: rgb(66, 66, 66);
     width: 100%;
     height: 100vh;
-    z-index: 99999;
+    z-index: 999999;
   }
   
   .loading {
@@ -40,52 +40,57 @@ html {
     border-radius: 50px;
     }    
       .ball:nth-child(1) {
-        background: #d9d9d9;
+        background: rgb(238, 238, 238);
         -webkit-animation: right 1s infinite ease-in-out;
         -moz-animation: right 1s infinite ease-in-out;
         animation: right 1s infinite ease-in-out;    
       }
   
       .ball:nth-child(2) {
-        background: #d9d9d9;
+        background: rgb(238, 238, 238);
         -webkit-animation: left 1.1s infinite ease-in-out;
         -moz-animation: left 1.1s infinite ease-in-out;
         animation: left 1.1s infinite ease-in-out;
       }
   
       .ball:nth-child(3) {
-        background: #d9d9d9;
+        background: rgb(238, 238, 238);
         -webkit-animation: right 1.05s infinite ease-in-out;
         -moz-animation: right 1.05s infinite ease-in-out;
         animation: right 1.05s infinite ease-in-out;
       }
   
       .ball:nth-child(4) {
-        background: #d9d9d9;
+        background: rgb(238, 238, 238);
         -webkit-animation: left 1.15s infinite ease-in-out;
         -moz-animation: left 1.15s infinite ease-in-out;
         animation: left 1.15s infinite ease-in-out;
        }
   
       .ball:nth-child(5) {
-        background: #d9d9d9;  
+        background:rgb(238, 238, 238);  
         -webkit-animation: right 1.1s infinite ease-in-out;
         -moz-animation: right 1.1s infinite ease-in-out;
         animation: right 1.1s infinite ease-in-out;
       }
   
       .ball:nth-child(6) {
-        background: #d9d9d9;  
+        background: rgb(238, 238, 238);  
         -webkit-animation: left 1.05s infinite ease-in-out;
         -moz-animation: left 1.05s infinite ease-in-out;
         animation: left 1.05s infinite ease-in-out;
        }
   
       .ball:nth-child(7) {
-        background: #d9d9d9;  
+        background: rgb(238, 238, 238);  
         -webkit-animation: right 1s infinite ease-in-out;
         -moz-animation: right 1s infinite ease-in-out;
         animation: right 1s infinite ease-in-out;
+      }
+
+      .ball:hover {
+          background: turquoise;
+          transition: 0.2s ease-in;
       }
   
   
@@ -146,7 +151,7 @@ nav {
 }
 
 .nav_links a {
-  color: rgb(238, 238, 238);;
+  color: rgb(238, 238, 238);
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 1000;
