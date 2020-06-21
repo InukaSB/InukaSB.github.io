@@ -17,19 +17,21 @@ html {
 
 /********** Loading screen *****************/
 
-/* I got this from code pen */
-
+/* I had to edit this part to make the loading screen  */
 .loader_bg {
     background: rgb(66, 66, 66);
     width: 100%;
     height: 100vh;
-    z-index: 999999;
+    z-index: 99999;
+    position: fixed;
   }
   
+  /* I got this from code pen */
+
   .loading {
     width: 200px;
     height: 100px;
-    padding-top: 20%;
+    padding-top: 40vh;
     margin: 0 auto;
   }
   
@@ -88,11 +90,7 @@ html {
         animation: right 1s infinite ease-in-out;
       }
 
-      .ball:hover {
-          background: turquoise;
-          transition: 0.2s ease-in;
-      }
-  
+
   
   @-webkit-keyframes right {
     0%   { -webkit-transform: translate(-15px);   }
@@ -384,6 +382,8 @@ ion-icon:hover {
     .nav_links {
         height: 5%;
     }
+
+
 
 }
 
