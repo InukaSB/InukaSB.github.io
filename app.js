@@ -29,7 +29,7 @@ const navSlide = () => {
 
 setTimeout(function(){
     $('.loader_bg').fadeToggle();
-}, 1000);
+}, 3000);
 
 // var preloader = document.getElementsByClassName('.loader_bg');
 

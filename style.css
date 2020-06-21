@@ -186,7 +186,7 @@ nav {
     position: absolute;
     bottom: 0;
     background: turquoise;
-    height: 2px;
+    height: 3px;
     left: auto;
     right: 0;
     width: 0px;
@@ -210,7 +210,8 @@ nav {
     background-position-x: 40%;
     background-position-y: 40%;
     margin: 0;
-    height: 800px;
+    height: 100vh;
+    /* height: 800px; */
 }
 
 /************* About Me***************/
@@ -218,8 +219,9 @@ nav {
 .aboutMe {
     width: 100%;
     background-color: rgb(255, 255, 255);
-    height: 800px;
-    padding-top: 40vh;
+    height: 100vh;
+    /* height: 800px; */
+    padding-top: 35vh;
 }
 
 .aboutMe h1 {
@@ -372,6 +374,10 @@ ion-icon:hover {
 
     .buttons {
         width: 30%;
+    }
+
+    .aboutMe {
+        padding-top: 20vh;
     }
 
 }
