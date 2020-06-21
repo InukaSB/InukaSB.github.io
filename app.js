@@ -31,11 +31,11 @@ setTimeout(function(){
     $('.loader_bg').fadeToggle();
 }, 1000);
 
-var preloader = document.getElementsByClassName('.loader_bg');
+// var preloader = document.getElementsByClassName('.loader_bg');
 
-function loading(){
-    preloader.style.display = 'none';
-}
+// function loading(){
+//     preloader.style.display = 'none';
+// }
     
 loading();
 navSlide();
