@@ -25,16 +25,17 @@ const navSlide = () => {
 
 }
 
-//  var preloader = document.getElementsByClassName('.loader_bg');
-
-// function loading(){
-//         preloader.style.display = 'none';
-//  }
-    
-// loading();
+// I got the below code from youtube tutorials
 
 setTimeout(function(){
     $('.loader_bg').fadeToggle();
 }, 1000);
 
+var preloader = document.getElementsByClassName('.loader_bg');
+
+function loading(){
+    preloader.style.display = 'none';
+}
+    
+loading();
 navSlide();
