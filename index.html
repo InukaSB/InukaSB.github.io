@@ -7,8 +7,23 @@
     <link rel="stylesheet" href="style.css">
     <title>Inuka Batawala</title>
 </head>
-<body>
+<body onload="loading()">
+    
+    <div id="loading-screen">
+        <div class="loading">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+        </div>
+    </div>  
+    
     <div class="wraper">
+
+
         
         <section class="landingPage">
             <nav>
@@ -16,10 +31,14 @@
                     <img src="images/logo.png" alt="Logo for Inuka Batawala" height="70px" width="70px">
                 </div>
                 <ul class="nav_links">
-                    <li><a href="#aboutMe">About</a></li>
-                    <li><a href="#myWork">My Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="https://inukasb.blogspot.com">Blog</a></li>
+                    
+                    <!-- I got the link hover animation from codepen, I added the classes for the animation to work -->
+                    
+                    <li><a href="#aboutMe" class="link--underline-effect">About</a></li>
+                    <li><a href="#myWork" class="link--underline-effect">My Work</a></li>
+                    <li><a href="#contact" class="link--underline-effect">Contact</a></li>
+                    <li><a href="https://inukasb.blogspot.com" class="link--underline-effect" target="">Blog</a></li>
+                
                 </ul>
                 <div class="burger">
                     <div class="line1"></div>

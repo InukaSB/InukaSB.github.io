@@ -25,4 +25,12 @@ const navSlide = () => {
 
 }
 
+var preloader = document.getElementById('loading-screen');
+
+function loading(){
+    preloader.style.display = 'none';
+}
+
+loading();
+
 navSlide();
