@@ -35,7 +35,5 @@ setTimeout(function(){
 
 // function loading(){
 //     preloader.style.display = 'none';
-// }
-    
-loading();
+
 navSlide();
