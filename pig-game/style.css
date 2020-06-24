@@ -54,10 +54,10 @@ body {
     width: 1000px;
     background-color: white;
     z-index: 99999;
-    position: fixed;
+    position: relative;
     padding: 100px;
-    left: 17.5%;
-    top: 10%;
+    margin: auto;
+    top: 10vh;
     border-radius: 50px;
     padding-bottom: 150px;
 }
