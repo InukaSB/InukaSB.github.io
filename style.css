@@ -283,21 +283,23 @@ nav {
 }
 
 .game {
-  padding: 100px;
+  /* padding: 100px; */
+  margin: auto;
+  padding-bottom: 100px;
   
 }
 
 .game p {
   background: linear-gradient(to left, #00ff08, #00ffc3);
   padding: 20px;
-  width: 400px;
+  width: 300px;
   text-align: center;
   margin: auto;
   border-radius: 20px;
 }
 
 .game a {
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
   color: rgb(66, 66, 66);
   font-family: 'Poppins', sans-serif;
