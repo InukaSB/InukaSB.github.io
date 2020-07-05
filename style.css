@@ -390,7 +390,7 @@ ion-icon:hover {
   .social li a .fa {
     font-size: 40px;
     color: #555;
-    line-height: 80px;
+    line-height: 90px;
     transition: 0.5s;
   }
   
@@ -461,6 +461,18 @@ ion-icon:hover {
   
   .social li:hover:nth-child(2) a::after {
     background-color: #66b4ef;
+  }
+
+  ul li:hover:nth-child(3) a {
+    background-color: #e4405f;
+  }
+  
+  ul li:hover:nth-child(3) a::before {
+    background-color: #b6334c;
+  }
+  
+  ul li:hover:nth-child(3) a::after {
+    background-color: #e6536f;
   }
   
 
