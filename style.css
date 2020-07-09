@@ -463,15 +463,15 @@ ion-icon:hover {
     background-color: #66b4ef;
   }
 
-  ul li:hover:nth-child(3) a {
+  .social li:hover:nth-child(3) a {
     background-color: #e4405f;
   }
   
-  ul li:hover:nth-child(3) a::before {
+  .social li:hover:nth-child(3) a::before {
     background-color: #b6334c;
   }
   
-  ul li:hover:nth-child(3) a::after {
+  .social li:hover:nth-child(3) a::after {
     background-color: #e6536f;
   }
   
